@@ -16,7 +16,7 @@ const PostList = () => {
   }, []);
 
 
-  if (!posts.length) {
+  if (!posts) {
     return (
       <>
         <h1 style={{ textAlign: "center" }}>Posts not created</h1>
