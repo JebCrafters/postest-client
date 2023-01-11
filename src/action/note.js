@@ -5,7 +5,7 @@ import axios from 'axios'
 export const createPost = async (namePost, textPost, dateTime, name, color) => {
     // console.log(namePost, textPost, dateTime,name )
     try {
-       await axios.post(`http://localhost:5000/api/posts/create-post`, {
+       await axios.post(`https://postes.herokuapp.com/api/posts/create-post`, {
             namePost,
             textPost,
             dateTime,
@@ -22,7 +22,7 @@ export const createPost = async (namePost, textPost, dateTime, name, color) => {
 
 export const Posts = async () => {
     try {
-        const response = await axios.get('http://localhost:5000/api/posts/all-posts');
+        const response = await axios.get('https://postes.herokuapp.com/api/posts/all-posts');
         // console.log(response.data)
         const res = response.data
         return res
