@@ -1,0 +1,75 @@
+.post {
+    width: 100%;
+    height: 100%;
+}
+.form__createPost{
+    max-width:30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.2vw solid black;
+    border-radius: 2vw;
+    margin-bottom: 2vw;
+}
+.input__name  {
+    font-size:1.5vw;
+    width: calc(60% - 2vw);
+    border: none;
+    margin: 1vw;
+}
+.input__text {
+    font-size: 1.5vw;   
+    border: none;
+    min-width: 20vw;
+    min-height: 10vw;
+    max-height: 10vw;
+    max-width: 20vw;
+    text-overflow:unset;
+    text-align: justify;
+}
+.input__name:focus {
+    animation: none;   
+}
+.form__inputTextArea{
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input__dateAuthor {
+    display: flex;
+    flex-direction: row;
+}
+.date {
+    -webkit-text-stroke: 0.03vw rgb(0, 0, 0);
+    color: white;
+    font-size: 1.5vw;
+    margin:1vw ;
+    padding: 0.5vw;
+
+}
+.name {
+    -webkit-text-stroke: 0.03vw rgb(0, 0, 0);
+    color: white;
+    font-size: 1.5vw;
+    margin:1vw ;
+    padding: 0.5vw;
+
+}
+.post_name {
+    font-size: 2.5vw;
+    -webkit-text-stroke: 0.03vw rgb(0, 0, 0);
+    color: white;
+}
+.post_text{
+    -webkit-text-stroke: 0.03vw rgb(0, 0, 0);
+    color: white;
+    font-size: 1.5vw;
+    border: none;
+    min-width: 20vw;
+    min-height: 10vw;
+    max-height: 10vw;
+    max-width: 20vw;
+    overflow: auto;
+    text-align: justify;
+}

@@ -1,0 +1,42 @@
+.navbar {
+    display: flex;
+    height: 5vw;
+    justify-content: center;
+    background-color: rgb(255, 238, 251);
+    width: 100%;
+    border-bottom: 0.1vw solid black;
+  }
+  .navbar__register{
+    margin-left: auto;
+    margin-right: 1vw;
+    font-size: 1.5vw;
+  }
+  .navbar__login {
+    margin-right: 1vw;
+    font-size: 1.5vw;
+  }
+  .navbar__name{
+    margin-left: auto;
+    margin-right: 1vw;
+    font-size: 1.5vw;
+  }
+  .navbar__logout{
+    margin-right: 1vw;
+    font-size: 1.5vw;
+  }
+  .navbar__main{
+    margin-right: 1vw;
+    font-size: 1.5vw;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .navbar__logo {
+    margin-left: 3vh;
+    display: flex;
+    padding: 0.5vw 0.2vw 0.5vw 0.2vw;
+    height: 5vw;
+    width: auto;
+  }

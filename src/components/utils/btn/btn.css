@@ -1,0 +1,14 @@
+.btn {
+    width: 7vw;
+    height: 5vh;
+    border: 0.3vw solid pink;
+    background-color: pink;
+    border-radius: 5%;
+    font-size: 1vw;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+}
+.btn:hover {
+    background-color: rgb(143, 120, 123);
+}

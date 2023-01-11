@@ -1,0 +1,35 @@
+* {
+  outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #566885;
+  }
+  body {
+    background-color: #f5c9ea9a;
+  }
+  #root {
+    width: 100%;
+  }
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1vw;
+  }
+  .test {
+    font-size: 2vw;
+  }
+  .container__posts {
+    margin-top: 2vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    column-gap: 1vw;
+  }

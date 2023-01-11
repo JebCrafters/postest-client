@@ -1,0 +1,23 @@
+.authorization {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 50vh;
+    align-items: center;
+    background-color: white;
+    border-radius:35%;
+    padding: 3vw;
+    align-items: center;
+    justify-content: center;
+    border: 0.2vw solid rgb(233, 74, 193);
+}
+.authorization__header {
+    font-size: 2vw;
+    font-weight: 700;
+}
+input {
+    margin: 1vw 2vw;
+}
+.navbar__logo{
+    cursor: pointer;
+}
