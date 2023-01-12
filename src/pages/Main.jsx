@@ -13,7 +13,7 @@ const Main = () => {
   
   return (
     <>
-        {!isAuth && <h1 style={{fontSize: "2vw"}}> You are not autorization</h1>}
+        {!isAuth && <h1 className="not_authorization"> You are not autorization</h1>}
         {/* <Post/>  */}
         {isAuth && <Test />}
         <PostList />

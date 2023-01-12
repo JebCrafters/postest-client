@@ -21,3 +21,31 @@ input {
 .navbar__logo{
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) { 
+    .authorization {
+        width: 70vw;
+        height: 60vh;
+    }
+    .authorization__header {
+        font-size: 6vw;
+        font-weight: 1000;
+    }
+}
+@media screen and (max-width: 560px) {
+    .authorization {
+        margin-top:5vw;
+        width: 90vw;
+        height: 70vh;
+    }
+    .authorization__header {
+        font-size: 10vw;
+        font-weight: 1000;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+
+
+}

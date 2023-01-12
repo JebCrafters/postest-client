@@ -40,3 +40,22 @@ input:focus {
     
     
 }
+
+@media screen and (max-width: 768px) { 
+    input{
+        height: 6vw;
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width: 560px) {
+    input{
+        height: 10vw;
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+
+
+}

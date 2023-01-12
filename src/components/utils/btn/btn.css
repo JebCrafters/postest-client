@@ -12,3 +12,30 @@
 .btn:hover {
     background-color: rgb(143, 120, 123);
 }
+
+@media screen and (max-width: 768px) { 
+    .btn {
+        width: 25vw;
+        height: 10vh;
+        border: 0.3vw solid pink;
+        border-radius: 5%;
+        font-size: 3vw;
+
+    }
+}
+@media screen and (max-width: 560px) {
+    .btn {
+        width: 30vw;
+        height: 10vh;
+        font-size: 4.5vw;
+        margin-top: 2vw;
+
+
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+
+
+}

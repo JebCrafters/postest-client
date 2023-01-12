@@ -32,9 +32,32 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
     column-gap: 1vw;
-    
+  }
+  .not_authorization{
+    font-size:2vw
   }
 
-  @media screen and (max-width: 759) {
-    
+  
+@media screen and (max-width: 768px) {
+  .not_authorization{
+    font-size:5vw
   }
+  .test {
+    font-size: 4vw;
+  }
+
+}
+@media screen and (max-width: 560px) {
+  .not_authorization{
+    font-size:8vw
+  }
+  .test {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+
+
+}

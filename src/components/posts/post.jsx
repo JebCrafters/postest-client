@@ -6,7 +6,7 @@ const Post =  (props)  => {
   
   return (
     <>
-      <div className="form__createPost" style= {{backgroundColor: props.post.color}} >
+      <div className="form__Post" style= {{backgroundColor: props.post.color}} >
         <h1 className="post_name"> {props.post.namePost} </h1>
         <div className="form__inputTextArea">
           <h1 className="post_text"  > {props.post.textPost} </h1>
