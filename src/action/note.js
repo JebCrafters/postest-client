@@ -5,15 +5,27 @@ import axios from 'axios'
 export const createPost = async (namePost, textPost, dateTime, name, color) => {
     // console.log(namePost, textPost, dateTime,name )
     try {
-       await axios.post(`https://postes.herokuapp.com/api/posts/create-post`, {
-            namePost,
-            textPost,
-            dateTime,
-            name,
-            color
-        })
+        if (!namePost && !textPost) {
+            return  alert("Fill in the post title and post text")
+        }
+        if (!namePost ) {
+            return  alert("Fill in the post title ")
+        }
+        if (!textPost ) {
+            return  alert("Fill in the post text ")
+        }else {
+            alert("Post created successfully")
+            window.location.assign ("https://postes.herokuapp.com/main")
+            await axios.post(`https://postes.herokuapp.com/api/posts/create-post`, {
+                namePost,
+                textPost,
+                dateTime,
+                name,
+                color
+            })
+            
+        }
 
-        alert("Note was created successfully")
     } catch (e) {
         alert("Note was not created")
     }
