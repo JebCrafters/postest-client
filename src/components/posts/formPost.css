@@ -75,3 +75,8 @@
     overflow: auto;
     text-align: justify;
 }
+
+
+@media screen and (max-width: 759px) {
+
+}

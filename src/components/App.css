@@ -32,4 +32,9 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
     column-gap: 1vw;
+    
+  }
+
+  @media screen and (max-width: 759) {
+    
   }
