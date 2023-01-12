@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import Navbar from "./navbar/Navbar";
 import './App.css'
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes, Navigate} from "react-router-dom";
 import Registration from "./authorization/Registration";
 import {useDispatch, useSelector } from 'react-redux';
 import Login from './authorization/Login';
@@ -23,8 +23,12 @@ function App() {
                   <Routes>
                       {!isAuth &&   <Route path="/registration" element={<Registration/>}/> }
                       {!isAuth &&   <Route path="/login" element={<Login/>}/> }
+
+                      {isAuth &&   <Route path="/registration" element={<Main/>}/> }
+                      {isAuth &&   <Route path="/login" element={<Main/>}/> }
+                      
                       <Route path="/" element={<Main/>}/>  
-                      <Route path="*" element={<Main/>}/>  
+                      <Route path="*" element={<Navigate to="/" />}/>  
                       {isAuth &&  <Route path="/create-post" element={<FormPost/>}/> } 
 
                   </Routes>
