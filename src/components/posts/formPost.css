@@ -63,6 +63,7 @@
 }
 .post_text{
     white-space: pre-wrap;
+    word-break: break-word;
     -webkit-text-stroke: 0.03vw rgb(0, 0, 0);
     color: white;
     font-size: 1.5vw;
