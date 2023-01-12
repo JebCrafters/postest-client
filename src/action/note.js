@@ -15,7 +15,7 @@ export const createPost = async (namePost, textPost, dateTime, name, color) => {
             return  alert("Fill in the post text ")
         }else {
             alert("Post created successfully")
-            window.location.assign ("https://postes.herokuapp.com/main")
+            window.location.assign ("https://iso2.tech/main")
             await axios.post(`https://postes.herokuapp.com/api/posts/create-post`, {
                 namePost,
                 textPost,
