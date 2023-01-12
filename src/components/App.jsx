@@ -24,11 +24,11 @@ function App() {
                       {!isAuth &&   <Route path="/registration" element={<Registration/>}/> }
                       {!isAuth &&   <Route path="/login" element={<Login/>}/> }
 
-                      {isAuth &&   <Route path="/registration" element={<Main/>}/> }
-                      {isAuth &&   <Route path="/login" element={<Main/>}/> }
+                      {isAuth &&   <Route path="/registration" element={<Navigate to="/"/>}/> }
+                      {isAuth &&   <Route path="/login" element={<Navigate to="/"/>}/> }
                       
                       <Route path="/" element={<Main/>}/>  
-                      <Route path="*" element={<Navigate to="/" />}/>  
+                      <Route path="*" element={<Navigate to="/"/>}/>  
                       {isAuth &&  <Route path="/create-post" element={<FormPost/>}/> } 
 
                   </Routes>
