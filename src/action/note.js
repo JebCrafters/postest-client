@@ -15,7 +15,7 @@ export const createPost = async (namePost, textPost, dateTime, name, color) => {
 
         alert("Note was created successfully")
     } catch (e) {
-        alert(e.response.data.message)
+        alert("Note was not created")
     }
 
 }

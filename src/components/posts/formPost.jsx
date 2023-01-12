@@ -16,7 +16,7 @@ const FormPost = () => {
   };
   const dateTime =  Date().slice(0,21);
   const color = String  ("#" + localStorage.getItem('color')) 
-  console.log(color)
+  // console.log(color)
   const currentUser = useSelector((state) => state.user.currentUser.email);
   const str_user = String(currentUser);
   const name = str_user.split("@")[0];
