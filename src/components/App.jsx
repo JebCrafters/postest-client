@@ -21,7 +21,6 @@ function App() {
               <Navbar/>
               <div className="wrap">
                   <Routes>
-                      <Route path="/main" element={<Main/>}/>
                       {!isAuth &&   <Route path="/registration" element={<Registration/>}/> }
                       {!isAuth &&   <Route path="/login" element={<Login/>}/> }
                       <Route path="/*" element={<Main/>}/>  
