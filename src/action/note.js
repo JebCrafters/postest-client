@@ -23,15 +23,20 @@ export const createPost = async (namePost, textPost, dateTime, name, color) => {
             }).then(function(response){
 
             }).finally(
-                alert("Post created successfully"),
-                window.location = "https://iso2.tech"
+                
             )            
                 
 
         }
 
     } catch (e) {
-        alert("Note was not created")
+        if (e) {
+            alert("Note was not created")
+        }
+        else {
+            alert("Post created successfully"),
+                window.location = "https://iso2.tech"
+        }
     }
 
 }
