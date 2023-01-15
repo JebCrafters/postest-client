@@ -3,7 +3,6 @@ import axios from 'axios'
 
 
 export const createPost = async (namePost, textPost, dateTime, name, color) => {
-    try {
         if (!namePost && !textPost) {
             return alert("Fill in the post title and post text")
         }
@@ -20,18 +19,8 @@ export const createPost = async (namePost, textPost, dateTime, name, color) => {
                 dateTime,
                 name,
                 color
-            }).then(function(response){
-                alert("Post created successfully")
-            }).finally(
-                window.location = "https://iso2.tech"
-            )            
-                
-
+            })          
         }
-
-    } catch (e) {
-            alert("Note was not created")
-    }
 
 }
 
