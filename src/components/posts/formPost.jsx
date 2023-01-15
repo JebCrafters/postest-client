@@ -56,7 +56,6 @@ const FormPost = () => {
             name,
             color
             )
-            
           }
           title="Create post"
           />

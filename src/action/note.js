@@ -3,6 +3,7 @@ import axios from 'axios'
 
 
 export const createPost = async (namePost, textPost, dateTime, name, color) => {
+    try {
         if (!namePost && !textPost) {
             return alert("Fill in the post title and post text")
         }
@@ -21,6 +22,11 @@ export const createPost = async (namePost, textPost, dateTime, name, color) => {
                 color
             })          
         }
+
+    } catch (e) {
+            alert(e.response.data.message)
+            window.location = "https://iso2.tech/create-post"
+    }
 
 }
 
