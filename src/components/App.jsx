@@ -29,7 +29,7 @@ function App() {
                       
                       <Route path="/" element={<Main/>}/>  
                       <Route path="*" element={<Navigate to="/"/>}/>  
-                      {isAuth &&  <Route path="/create-post/" element={<FormPost/>}/> } 
+                      {isAuth &&  <Route path="/create-post" element={<FormPost/>}/> } 
 
                   </Routes>
               </div>
