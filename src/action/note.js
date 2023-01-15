@@ -20,9 +20,10 @@ export const createPost = async (namePost, textPost, dateTime, name, color) => {
                 dateTime,
                 name,
                 color
-            }).finally(
+            }).then(function(response){
                 window.location.assign("https://iso2.tech")
-            )
+            })            
+                
 
         }
 
