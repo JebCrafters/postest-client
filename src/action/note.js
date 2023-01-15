@@ -34,8 +34,8 @@ export const createPost = async (namePost, textPost, dateTime, name, color) => {
             alert("Note was not created")
         }
         else {
-            alert("Post created successfully"),
-                window.location = "https://iso2.tech"
+            alert("Post created successfully")
+            window.location = "https://iso2.tech"
         }
     }
 
