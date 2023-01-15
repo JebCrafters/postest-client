@@ -28,7 +28,7 @@ export const login =  (email, password,color ) => {
             localStorage.setItem('token', response.data.token)
             localStorage.setItem('color', response.data.user.color)
         } catch (e) {
-            // console.log(e.response.data.message)
+           alert(e.response.data.message)
         }
     }
 }
