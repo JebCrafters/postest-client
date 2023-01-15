@@ -21,8 +21,7 @@ export const createPost = async (namePost, textPost, dateTime, name, color) => {
                 name,
                 color
             }).then(function(response){
-                alert("Post created successfully")
-                window.location = "https://iso2.tech"
+
             }).finally(
                 alert("Post created successfully"),
                 window.location = "https://iso2.tech"
