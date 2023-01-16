@@ -1,6 +1,8 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import './profile.css'
+import './shakal.css'
+
 
 const Profile = () => {
   const currentUser = useSelector((state) => state.user.currentUser.email);
