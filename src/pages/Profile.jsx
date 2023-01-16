@@ -1,16 +1,23 @@
-import React from 'react';
-import {useSelector } from 'react-redux';
+import React from "react";
+import { useSelector } from "react-redux";
+import './profile.css'
 
 const Profile = () => {
-    const currentUser = (useSelector(state => state.user.currentUser.email))
-    const str_user = String(currentUser)
-    const name = str_user.split('@')[0];
-
-    return (
-        <div>
-             <h1>Welcome to you profile page:  {name} </h1>
-        </div>
-    );
+  const currentUser = useSelector((state) => state.user.currentUser.email);
+  const str_user = String(currentUser);
+  var background = ""
+  if (str_user == "shakal@gmail.com") {
+    background = "shakal";
+  } else {
+    background = "profile_background";
+  }
+  return (
+    <>
+      <div className={`${background}`}>
+        <h1 className="text">Welcome to you profile</h1>
+      </div>
+    </>
+  );
 };
 
 export default Profile;
