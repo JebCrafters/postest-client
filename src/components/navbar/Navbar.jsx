@@ -22,7 +22,7 @@ const Navbar = () => {
                 <NavLink to="/"> <img src={Logo} alt = {""}  className="navbar__logo"/> </NavLink>
                 {!isAuth &&  <div className="navbar__register"><NavLink to="/registration">  Registration </NavLink> </div> }
                 {!isAuth &&  <div className="navbar__login"><NavLink to="/login">  Login </NavLink> </div> }
-                {isAuth && <div className="navbar__name"> {name} </div> }  
+                {isAuth && <div className="navbar__name"> <NavLink  to = {`/${name}`}> Yor profile {name}</NavLink> </div> }   
                 {isAuth && <div className="navbar__logout">  <NavLink  to = "/create-post"> Create post</NavLink> </div> }  
                 {isAuth && <div className="navbar__logout">  <NavLink  onClick={() => dispatch(logout())}> Logout</NavLink> </div> }  
                 {isAuth && <div className="navbar__main">  <NavLink  to = "/"> Main</NavLink> </div> }  

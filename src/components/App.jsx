@@ -8,9 +8,15 @@ import Login from './authorization/Login';
 import {auth} from '../action/user'
 import Main from '../pages/Main';
 import FormPost from '../components/posts/formPost';
+import Profile from '../pages/Profile'
 
 function App() {
     const isAuth = useSelector(state => state.user.isAuth) 
+
+    const currentUser = (useSelector(state => state.user.currentUser.email))
+    const str_user = String(currentUser)
+    const name = str_user.split('@')[0];
+
     const dispatch = useDispatch()
     useEffect(() => {
       dispatch(auth())
@@ -29,7 +35,12 @@ function App() {
                       
                       <Route path="/" element={<Main/>}/>  
                       <Route path="*" element={<Navigate to="/"/>}/>  
+
                       {isAuth &&  <Route path="/create-post" element={<FormPost/>}/> } 
+                      {!isAuth &&  <Route path="/create-post" element={<Navigate to="/"/>}/> }
+
+                      {isAuth &&  <Route path={`/${name}`} element={<Profile/>}/> } 
+                      {!isAuth &&  <Route path={`/${name}`} element={<Navigate to="/"/>}/> }
 
                   </Routes>
               </div>
