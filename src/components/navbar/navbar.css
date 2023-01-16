@@ -81,9 +81,9 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 0.5vw 1vw 0.5vw 0.5vw;
     margin-left: 3vh;
     display: flex;
-    padding: 0.5vw 0.2vw 0.5vw 0.2vw;
     height: 5vw;
     width: 19%;
   }
@@ -113,7 +113,6 @@ a:hover {
       background-image: url(../../assets/img/logo-navbar.png);
       margin-left: 3vh;
       display: flex;
-      padding: 0.5vw 0.2vw 0.5vw 0.2vw;
       height: 10vw;
       width: 37%;
     }
@@ -150,11 +149,10 @@ a:hover {
     }
     .navbar__logo {
       background-image: url(../../assets/img/logo-navbar-alt.png);
-      margin-left: 6vh;
+      margin-left: 3vh;
       display: flex;
-      padding: 0.5vw 0.2vw 0.5vw 0.2vw;
-      height: 14vw;
-      width: 12%;
+      height: 15vw;
+      width: 13%;
     }
     .navbar__name{
       margin-right: 1.5vw;
