@@ -2,7 +2,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+ 
 }
 .navbar {
     display: flex;
@@ -13,26 +13,63 @@ a:hover {
     border-bottom: 0.1vw solid black;
   }
   .navbar__register{
+    border-radius: 50% 0 50% 0;
+    border:  0.2vw solid rgb(243, 148, 40);
+    background-color: rgba(252, 163, 63, 0.664);
+    padding: 0.5vw;
     margin-left: auto;
     margin-right: 1vw;
     font-size: 1.5vw;
   }
+  .navbar__register:hover{ 
+    background-color: rgba(252, 164, 63, 0.267);
+  }
+
   .navbar__login {
+    border-radius: 50% 0 50% 0;
+    border:  0.2vw solid rgb(243, 148, 40);
+    background-color: rgba(252, 163, 63, 0.664);
+    padding: 0.5vw;
     margin-right: 1vw;
     font-size: 1.5vw;
+  }
+  .navbar__login:hover{ 
+    background-color: rgba(252, 164, 63, 0.267);
   }
   .navbar__name{
+    border-radius: 50% 0 50% 0;
+    border:  0.2vw solid rgb(243, 148, 40);
+    background-color: rgba(252, 163, 63, 0.664);
+    padding: 0.5vw;
     margin-left: auto;
     margin-right: 1vw;
+    padding: 0.8vw;
     font-size: 1.5vw;
+  }
+  .navbar__name:hover {
+    background-color: rgba(252, 164, 63, 0.267);
   }
   .navbar__logout{
+    padding: 0.8vw;
+    border-radius: 50% 0 50% 0;
+    border:  0.2vw solid rgb(243, 148, 40);
+    background-color: rgba(252, 163, 63, 0.664);
     margin-right: 1vw;
     font-size: 1.5vw;
   }
+  .navbar__logout:hover {
+    background-color: rgba(252, 164, 63, 0.267);
+  }
   .navbar__main{
+    padding: 0.8vw;
+    border-radius: 50% 0 50% 0;
+    border:  0.2vw solid rgb(243, 148, 40);
+    background-color: rgba(252, 163, 63, 0.664);
     margin-right: 1vw;
     font-size: 1.5vw;
+  }
+  .navbar__main:hover {
+    background-color: rgba(252, 164, 63, 0.267);
   }
   .container {
     width: 100%;
@@ -40,11 +77,15 @@ a:hover {
     align-items: center;
   }
   .navbar__logo {
+    background-image: url(../../assets/img/logo-navbar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     margin-left: 3vh;
     display: flex;
     padding: 0.5vw 0.2vw 0.5vw 0.2vw;
     height: 5vw;
-    width: auto;
+    width: 19%;
   }
 
   @media screen and (max-width: 768px) {
@@ -61,30 +102,36 @@ a:hover {
       margin-left: auto;
       margin-right: 1vw;
       font-size: 3vw;
+      padding: 0.8vw;
     }
     .navbar__login {
       margin-right: 1vw;
       font-size: 3vw;
+      padding: 0.8vw;
     }
     .navbar__logo {
+      background-image: url(../../assets/img/logo-navbar.png);
       margin-left: 3vh;
       display: flex;
       padding: 0.5vw 0.2vw 0.5vw 0.2vw;
-      height: 8vw;
-      width: auto;
+      height: 10vw;
+      width: 37%;
     }
     .navbar__name{
       margin-left: auto;
       margin-right: 1vw;
-      font-size: 3vw;
+      font-size: 2.3vw;
+      padding: 1vw;
     }
     .navbar__logout{
       margin-right: 1vw;
-      font-size: 3vw;
+      font-size: 2.3vw;
+      padding: 1vw;
     }
     .navbar__main{
       margin-right: 1vw;
-      font-size: 3vw;
+      font-size: 2.3vw;
+      padding: 1vw;
     }
   }
   @media screen and (max-width: 560px) {
@@ -94,26 +141,35 @@ a:hover {
     .navbar__register{
       margin-right: 2vw;
       font-size: 5vw;
+      padding: 1.3vw;
     }
     .navbar__login {
       margin-right: 2vw;
       font-size: 5vw;
+      padding: 1.3vw;
     }
     .navbar__logo {
-      height: 10vw;
+      background-image: url(../../assets/img/logo-navbar-alt.png);
+      margin-left: 6vh;
+      display: flex;
+      padding: 0.5vw 0.2vw 0.5vw 0.2vw;
+      height: 14vw;
+      width: 12%;
     }
     .navbar__name{
       margin-right: 1.5vw;
-      font-size: 4vw;
+      font-size: 3vw;
+      padding: 1.5vw;
     }
     .navbar__logout{
       margin-right: 1.5vw;
-      font-size: 4vw;
-
+      font-size: 3vw;
+      padding: 1.5vw;
     }
     .navbar__main{
       margin-right: 1.5vw;
-      font-size: 4vw;
+      font-size: 3vw;
+      padding: 1.5vw;
     }
   }
   

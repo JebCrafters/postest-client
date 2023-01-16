@@ -19,7 +19,7 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <div className="container">
-                <NavLink to="/"> <img src={Logo} alt = {""}  className="navbar__logo"/> </NavLink>
+                <NavLink className="navbar__logo" to="/main"> </NavLink> 
                 {!isAuth &&  <div className="navbar__register"><NavLink to="/registration">  Registration </NavLink> </div> }
                 {!isAuth &&  <div className="navbar__login"><NavLink to="/login">  Login </NavLink> </div> }
                 {isAuth && <div className="navbar__name"> <NavLink  to = {`/${name}`}> Yor profile {name}</NavLink> </div> }   
