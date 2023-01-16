@@ -1,17 +1,21 @@
 .profile_background {
     margin-top: -1vw;
     width: 100%;
-    height: 70vw;
-    background-color: rgba(255, 0, 234, 0.301);
+    height: auto;
+    background-color: rgba(0, 255, 255, 0.63);
 }
 .text {
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: red;
 }
 .shakal {
     margin-top: -1vw;
+    min-height: 100%;   
     width: 100%;
-    height: 70vw;
+    height: auto;
+    position: fixed;
+    height:max-content;
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -30,3 +34,36 @@
     90% {background-image: url(../assets/img/special_shakal/5.jpg);}
     100% {background-image: url(../assets/img/special_shakal/1.jpg);}
 }
+
+@media screen and (max-width: 768px) {
+    @keyframes shakal {
+        0%   {background-image: url(../assets/img/special_shakal/6.jpg);}
+        10%  {background-image: url(../assets/img/special_shakal/6.jpg);}
+        20%  {background-image: url(../assets/img/special_shakal/7.jpg);}
+        30%  {background-image: url(../assets/img/special_shakal/7.jpg);}
+        40%  {background-image: url(../assets/img/special_shakal/8.jpg);}
+        50%  {background-image: url(../assets/img/special_shakal/8.jpg);}
+        60% {background-image: url(../assets/img/special_shakal/9.jpg);}
+        70% {background-image: url(../assets/img/special_shakal/9.jpg);}
+        80% {background-image: url(../assets/img/special_shakal/10.jpg);}
+        90% {background-image: url(../assets/img/special_shakal/10.jpg);}
+        100% {background-image: url(../assets/img/special_shakal/6.jpg);}
+    }
+ }
+
+ @media screen and (max-width: 560px) { 
+    @keyframes shakal {
+        0%   {background-image: url(../assets/img/special_shakal/6.jpg);}
+        10%  {background-image: url(../assets/img/special_shakal/6.jpg);}
+        20%  {background-image: url(../assets/img/special_shakal/7.jpg);}
+        30%  {background-image: url(../assets/img/special_shakal/7.jpg);}
+        40%  {background-image: url(../assets/img/special_shakal/8.jpg);}
+        50%  {background-image: url(../assets/img/special_shakal/8.jpg);}
+        60% {background-image: url(../assets/img/special_shakal/9.jpg);}
+        70% {background-image: url(../assets/img/special_shakal/9.jpg);}
+        80% {background-image: url(../assets/img/special_shakal/10.jpg);}
+        90% {background-image: url(../assets/img/special_shakal/10.jpg);}
+        100% {background-image: url(../assets/img/special_shakal/6.jpg);}
+    }
+ }
+
