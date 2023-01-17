@@ -11,7 +11,7 @@
     border-radius: 2vw;
     margin-bottom: 2vw;
 }
-.form__Post {
+#form__Post {
     transition: 0.2s linear;
     width:30vw;
     display: flex;
@@ -21,7 +21,7 @@
     border-radius: 2vw;
     margin-bottom: 2vw;
 }
-.form__Post:hover {
+#form__Post:hover {
     scale: 1.1;
 }
 .resize-animation-stopper * {
@@ -95,14 +95,14 @@
 /* ======================= Mobile Responsive Styling=========================================*/
 
 @media screen and (max-width: 768px) {
-    .form__Post:hover {
+    #form__Post:hover {
         scale: 1;
     }
     .form__createPost{
         width:60vw;
         height: 40vw;
     }
-    .form__Post {
+    #form__Post {
         width:40vw;
     }
     .input__name  {
@@ -151,7 +151,7 @@
         width:70vw;
         height: 50vw;
     }
-    .form__Post {
+    #form__Post {
         width:80vw;
         height: 40vw;
         margin-top: 2vw;
