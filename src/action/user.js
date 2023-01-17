@@ -3,11 +3,18 @@ import {setUser} from "../reducers/userReducer";
 
 export const registration = async (email, password) => {
     var randomColor = Math.floor(Math.random()*16777215).toString(16);
+
+    const str_user = String(email)
+    var author = str_user.split('@')[0];
+    var regDate = Date().slice(0, 21);
+    
     try {
         const response = await axios.post(`https://postes.herokuapp.com/api/auth/registration`, {
             email,
             password,
-            color:randomColor
+            color: randomColor,
+            author,
+            regDate
         })
         alert(response.data.message)
     } catch (e) {

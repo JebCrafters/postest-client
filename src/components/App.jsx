@@ -36,11 +36,11 @@ function App() {
                       <Route path="/" element={<Main/>}/>  
                       <Route path="*" element={<Navigate to="/"/>}/>  
 
-                      {isAuth &&  <Route path="/create-post" element={<FormPost/>}/> } 
                       {!isAuth &&  <Route path="/create-post" element={<Navigate to="/"/>}/> }
+                      {isAuth &&  <Route path="/create-post" element={<FormPost/>}/> } 
 
-                      {isAuth &&  <Route path={`/${name}`} element={<Profile/>}/> } 
                       {!isAuth &&  <Route path={`/${name}`} element={<Navigate to="/"/>}/> }
+                      {isAuth &&  <Route path={`/${name}`} element={<Profile/>}/> } 
 
                   </Routes>
               </div>
