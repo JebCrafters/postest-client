@@ -4,6 +4,15 @@ import "../posts/formPost.css"
 
 const Post =  (props)  => {
   
+  let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.body.querySelector("form__Post").remove("resize-animation-stopper");
+  }, 100);
+});
+
   return (
     <>
       <div className="form__Post" style= {{backgroundColor: props.post.color}} >
