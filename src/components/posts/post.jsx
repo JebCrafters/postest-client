@@ -6,7 +6,7 @@ const Post =  (props)  => {
   
   let resizeTimer;
 window.addEventListener("resize", () => {
-  document.body.classList.add("resize-animation-stopper");
+  document.body.querySelector("form__Post").add("resize-animation-stopper");
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(() => {
     document.body.querySelector("form__Post").remove("resize-animation-stopper");
