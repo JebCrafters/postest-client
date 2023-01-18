@@ -40,20 +40,3 @@ export const Posts = async () => {
         console.log(error);
     }
 }
-
-// export default class PostService {
-//     static async getAll() {
-//         const response = [...await fetch('http://localhost:5000/api/posts/all-posts')]
-//         return response
-//     }
-// }
-
-
-// useEffect(() => {
-//     axios.get('http://localhost:5000/api/notes/posts').then(res => {
-//         setPosts(res)
-//         console.log(res.data)
-//     }).catch(e => {
-//         console.log(e)
-//     })
-// }, []);

@@ -73,18 +73,22 @@
     text-overflow: ellipsis;
 }
 .profilePostText:hover {
+    border: 0.2vw solid gold;
+    border-radius: 25%;
+    padding: 2vw;
     background-color: white;
     position: fixed;
-    min-width: 25vw;
-    min-height: 30vw;
-    max-height: 30vw;
-    max-width: 25vw;
+    min-height: 10vw;
+    height: auto;
+    max-height: 100%;
+    width: 25vw;
+    max-width: 100%;
     overflow: auto;
     word-break: break-word;
-    text-overflow:clip;
+    white-space:normal; 
+    text-overflow:none;
     top:30%;
     left: 35vw;
-    white-space: nowrap;
 }
 
 
